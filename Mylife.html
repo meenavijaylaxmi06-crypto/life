@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Purushan ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:#090312;
+    color:#fff7fb;
+    overflow-x:hidden;
+}
+section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:70px 22px;
+    overflow:hidden;
+}
+.stars,.stars:before,.stars:after{
+    content:"";
+    position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle,#fff 1px,transparent 1.5px),
+      radial-gradient(circle,#ffd6eb 1px,transparent 1.5px);
+    background-size:90px 90px,140px 140px;
+    background-position:10px 20px,50px 70px;
+    opacity:.32;
+    animation:drift 18s linear infinite;
+}
+.stars:before{animation-duration:27s;opacity:.18}
+.stars:after{animation-duration:35s;opacity:.12}
+@keyframes drift{to{transform:translate3d(35px,70px,0)}}
+
+.content{position:relative;z-index:2;max-width:900px;text-align:center}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;color:#ffc3dd;font-size:12px;margin-bottom:20px}
+h1{font-size:clamp(48px,10vw,105px);line-height:.95;text-shadow:0 0 25px rgba(255,120,190,.6)}
+h2{font-size:clamp(36px,7vw,68px);margin-bottom:22px}
+p{font-size:clamp(18px,2.5vw,23px);line-height:1.8;color:#f5dce8}
+.highlight{color:#ff9fcb}
+.small{font-size:16px;color:#dcb7c9}
+.scroll{margin-top:42px;color:#ffb5d5;letter-spacing:3px;font-size:12px;animation:bounce 1.8s infinite}
+@keyframes bounce{50%{transform:translateY(9px)}}
+
+#home{background:radial-gradient(circle at 50% 35%,#5a123e 0,#220b27 35%,#090312 75%)}
+.temple{font-size:80px;margin-bottom:25px;filter:drop-shadow(0 0 18px #ff9dcb)}
+.heart{
+    width:110px;height:100px;margin:0 auto 30px;position:relative;
+    transform:rotate(-45deg);
+    background:#e83f83;
+    border-radius:12px;
+    box-shadow:0 0 45px #ff4e9b;
+    animation:heartBeat 1.35s infinite;
+}
+.heart:before,.heart:after{content:"";position:absolute;width:110px;height:100px;background:#e83f83;border-radius:50%}
+.heart:before{top:-55px;left:0}
+.heart:after{left:55px;top:0}
+@keyframes heartBeat{50%{transform:rotate(-45deg) scale(1.12)}}
+
+.card{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,190,220,.22);
+    border-radius:28px;
+    padding:42px 30px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 25px 80px rgba(0,0,0,.4);
+}
+.number{
+    display:inline-flex;width:58px;height:58px;border-radius:50%;
+    align-items:center;justify-content:center;
+    border:1px solid #ff9fcb;color:#ffb9d7;margin-bottom:22px;
+    font-size:20px;
+}
+.quote{font-style:italic;color:#ffd1e4;margin-top:20px}
+
+.song{background:radial-gradient(circle at 50% 40%,#31124a,#0b0314 70%)}
+.moon{
+    width:170px;height:170px;border-radius:50%;
+    background:#fff2f8;
+    box-shadow:0 0 45px #ffe1ef,0 0 110px rgba(255,170,215,.35);
+    margin:0 auto 35px;
+    position:relative;
+}
+.moon:after{
+    content:"";position:absolute;width:170px;height:170px;border-radius:50%;
+    background:#31124a;left:48px;top:-14px;
+}
+.song-title{font-size:clamp(28px,5vw,52px);color:#ffd0e5;margin:20px 0}
+.song-box{margin-top:30px;padding:20px;border-radius:20px;background:rgba(255,255,255,.06)}
+.song-box a{
+    display:inline-block;margin-top:15px;padding:12px 25px;border-radius:30px;
+    color:white;text-decoration:none;border:1px solid #ff9fc9;
+    transition:.3s;
+}
+.song-box a:hover{background:#ff4f9a;transform:translateY(-3px)}
+
+.final{
+    min-height:120vh;
+    background:radial-gradient(circle at 50% 45%,#6e1649 0,#230822 30%,#07020c 75%);
+    perspective:1000px;
+}
+.final .content{transform-style:preserve-3d}
+.threeD{
+    font-family:Impact,Haettenschweiler,"Arial Black",sans-serif;
+    font-size:clamp(55px,13vw,150px);
+    line-height:.85;
+    letter-spacing:5px;
+    color:#ffb0d3;
+    text-transform:uppercase;
+    transform:rotateX(12deg) rotateY(-8deg);
+    text-shadow:
+      1px 1px 0 #d95d91,
+      2px 2px 0 #c54c80,
+      3px 3px 0 #ae3d6e,
+      4px 4px 0 #96335f,
+      8px 8px 20px rgba(0,0,0,.7),
+      0 0 35px rgba(255,90,165,.6);
+    animation:float3d 4s ease-in-out infinite;
+}
+@keyframes float3d{
+    0%,100%{transform:rotateX(12deg) rotateY(-8deg) translateY(0)}
+    50%{transform:rotateX(5deg) rotateY(8deg) translateY(-15px)}
+}
+.athan{font-size:clamp(30px,6vw,65px);margin-top:25px;color:#fff}
+.final-message{max-width:700px;margin:35px auto 0}
+.final-message strong{color:#ffafd1}
+
+.floating-heart{
+    position:absolute;
+    bottom:-40px;
+    font-size:22px;
+    opacity:.7;
+    animation:rise 9s linear infinite;
+}
+.h1{left:8%;animation-delay:1s}.h2{left:25%;animation-delay:4s}.h3{left:48%;animation-delay:2s}.h4{left:72%;animation-delay:5s}.h5{left:90%;animation-delay:3s}
+@keyframes rise{
+    0%{transform:translateY(0) rotate(0);opacity:0}
+    10%{opacity:.8}
+    100%{transform:translateY(-115vh) rotate(360deg);opacity:0}
+}
+footer{padding:25px;text-align:center;background:#050108;color:#b98da5;font-size:13px}
+@media(max-width:600px){
+    .card{padding:32px 20px}
+    .moon,.moon:after{width:125px;height:125px}
+    .moon:after{left:35px}
+}
+</style>
+</head>
+<body>
+
+<section id="home">
+<div class="stars"></div>
+<div class="content">
+    <div class="temple">🛕</div>
+    <div class="eyebrow">A little story about us</div>
+    <h1>For <span class="highlight">My Man</span> ❤️</h1>
+    <p style="margin-top:28px">
+        Some love stories begin with a photograph.<br>
+        <span class="highlight">Ours began with a moment.</span>
+    </p>
+    <div class="scroll">SCROLL TO READ OUR STORY ↓</div>
+</div>
+</section>
+
+<section>
+<div class="stars"></div>
+<div class="content card">
+    <div class="number">01</div>
+    <div class="eyebrow">Where it all began</div>
+    <h2>Our First Meeting 🛕</h2>
+    <p>
+        I met you at a temple, Athan.<br><br>
+        We didn't take a photo that day. But maybe that's okay.
+        Some moments don't need a camera to become unforgettable.
+    </p>
+    <p class="quote">“I may not have a picture of that day, but I will always have the memory of you. That moment 
+        when i saw you i got some thing special and all kinds of butterfly wings.”</p>
+</div>
+</section>
+
+<section>
+<div class="stars"></div>
+<div class="content card">
+    <div class="number">02</div>
+    <div class="eyebrow">After our first meeting</div>
+    <h2>Our First Phone Calls 📞</h2>
+    <p>
+        After we met, we started talking on the phone.
+        Those simple calls slowly became something I looked forward to.
+        Hearing your voice made ordinary days feel a little more special.
+        Every day starts with our voice but August 3 was the day I didn't hear
+        your voice and I felt something was missing, and i was waiting for your call 
+        for about 5 hours i texted you and called you but no response,
+        i think this is revenge on me for not picking up the call on saturday(August1)
+        if i hurt you sorry for everything....
+    </p>
+    <p class="quote">“Somehow, your voice became one of my favourite sounds.”</p>
+</div>
+</section>
+
+<section>
+<div class="stars"></div>
+<div class="content card">
+    <div class="number">03</div>
+    <div class="eyebrow">Then came the screens</div>
+    <h2>Our Video Calls 📱</h2>
+    <p>
+        Then our phone calls became video calls.
+        Seeing your face, talking about little things,
+        laughing together and simply spending time with you
+        became some of my favourite moments.
+    </p>
+    <p class="quote">“From hearing your voice to seeing your smile… I loved every little moment.”</p>
+</div>
+</section>
+
+<section>
+<div class="stars"></div>
+<div class="content card">
+    <div class="number">04</div>
+    <div class="eyebrow">The first gift from you</div>
+    <h2>My First Gift 🎁</h2>
+    <div style="font-size:90px;margin:10px 0 22px;filter:drop-shadow(0 0 18px #ffb0d3);">✨💎✨</div>
+    <p>
+        Your first gift to me came through your mom —
+        a beautiful <span class="highlight">chimmiki kamal</span>. ❤️
+    </p>
+    <p style="margin-top:22px">
+        It wasn't just a pair of earrings.
+        It became a little reminder of you, your thoughtfulness,
+        and the love behind that gesture.
+    </p>
+    <p class="quote">“My first gift from my love — a memory I will always treasure.”</p>
+</div>
+</section>
+
+<section class="song">
+<div class="stars"></div>
+<div class="content">
+    <div class="moon"></div>
+    <div class="eyebrow">The song you dedicated </div>
+    <div class="song-title">“Enge Andha Vennila” 🌙</div>
+    <p>
+        You dedicated this song to me, Papu.
+        And now, whenever I hear it, it carries a little piece of you with it.
+    </p>
+    <div class="song-box">
+        <div class="small">Want to add the song here?</div>
+        <a href="https://www.youtube.com/results?search_query=Enge+Andha+Vennila"target="_blank" rel="noopener noreferrer"
+           onclick="return true;">🎵 Add Your Song Link</a>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="stars"></div>
+<div class="content card">
+    <div class="number">05</div>
+    <div class="eyebrow">What I love about you</div>
+    <h2>The Way You Care ❤️</h2>
+    <p>
+        I love the way you admire me.
+        I love the way you notice the little things about me.
+        And most of all, I love the way you take care of me.
+    </p>
+    <p style="margin-top:22px">
+        You make me feel seen, valued and cared for.
+        Those little things mean more to me than I can ever explain.
+    </p>
+</div>
+</section>
+
+<section class="final">
+<div class="stars"></div>
+<span class="floating-heart h1">❤️</span>
+<span class="floating-heart h2">💗</span>
+<span class="floating-heart h3">❤️</span>
+<span class="floating-heart h4">💕</span>
+<span class="floating-heart h5">❤️</span>
+<div class="content">
+    <div class="eyebrow">And there is one thing I want you to know...</div>
+    <div class="heart"></div>
+    <div class="threeD">I LOVE YOU</div>
+    <div class="athan">ATHAN ❤️</div>
+    <div class="final-message">
+        <p>
+            From a temple meeting,<br>
+            to phone calls,<br>
+            to video calls,<br>
+            to my first chimmiki kamal,<br>
+            to a song that reminds me of you...
+        </p>
+        <p style="margin-top:25px">
+            <strong>our story became something I never want to stop writing.</strong>
+        </p>
+        <p style="margin-top:25px">
+            Thank you for admiring me, caring for me,
+            and being you. ❤️
+        </p>
+        <p style="margin-top:30px;font-size:28px;color:#ffb5d4">Forever yours. 🌙</p>
+    
+    </div>
+</div>
+</section>
+
+<footer>
+    Made with love, especially for  my kuttypattu ❤️
+</footer>
+</body>
+</html>

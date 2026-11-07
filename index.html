@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Purushan ❤️</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:#090312;
+    color:#fff7fb;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:70px 22px;
+    overflow:hidden;
+}
+
+.stars,
+.stars:before,
+.stars:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+        radial-gradient(circle,#fff 1px,transparent 1.5px),
+        radial-gradient(circle,#ffd6eb 1px,transparent 1.5px);
+    background-size:90px 90px,140px 140px;
+    background-position:10px 20px,50px 70px;
+    opacity:.32;
+    animation:drift 18s linear infinite;
+    pointer-events:none;
+}
+
+.stars:before{
+    animation-duration:27s;
+    opacity:.18;
+}
+
+.stars:after{
+    animation-duration:35s;
+    opacity:.12;
+}
+
+@keyframes drift{
+    to{
+        transform:translate3d(35px,70px,0);
+    }
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    width:100%;
+    text-align:center;
+}
+
+.eyebrow{
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#ffc3dd;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:clamp(48px,10vw,105px);
+    line-height:.95;
+    text-shadow:0 0 25px rgba(255,120,190,.6);
+}
+
+h2{
+    font-size:clamp(36px,7vw,68px);
+    margin-bottom:22px;
+}
+
+p{
+    font-size:clamp(18px,2.5vw,23px);
+    line-height:1.8;
+    color:#f5dce8;
+}
+
+.highlight{
+    color:#ff9fcb;
+}
+
+.small{
+    font-size:16px;
+    color:#dcb7c9;
+}
+
+.scroll{
+    margin-top:42px;
+    color:#ffb5d5;
+    letter-spacing:3px;
+    font-size:12px;
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(9px);
+    }
+}
+
+#home{
+    background:radial-gradient(circle at 50% 35%,#5a123e 0,#220b27 35%,#090312 75%);
+}
+
+.temple{
+    font-size:80px;
+    margin-bottom:25px;
+    filter:drop-shadow(0 0 18px #ff9dcb);
+}
+
+.heart{
+    width:110px;
+    height:100px;
+    margin:0 auto 30px;
+    position:relative;
+    transform:rotate(-45deg);
+    background:#e83f83;
+    border-radius:12px;
+    box-shadow:0 0 45px #ff4e9b;
+    animation:heartBeat 1.35s infinite;
+}
+
+.heart:before,
+.heart:after{
+    content:"";
+    position:absolute;
+    width:110px;
+    height:100px;
+    background:#e83f83;
+    border-radius:50%;
+}
+
+.heart:before{
+    top:-55px;
+    left:0;
+}
+
+.heart:after{
+    left:55px;
+    top:0;
+}
+
+@keyframes heartBeat{
+    50%{
+        transform:rotate(-45deg) scale(1.12);
+    }
+}
+
+.card{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,190,220,.22);
+    border-radius:28px;
+    padding:42px 30px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 25px 80px rgba(0,0,0,.4);
+}
+
+.number{
+    display:inline-flex;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #ff9fcb;
+    color:#ffb9d7;
+    margin-bottom:22px;
+    font-size:20px;
+}
+
+.quote{
+    font-style:italic;
+    color:#ffd1e4;
+    margin-top:25px;
+}
+
+.song{
+    background:radial-gradient(circle at 50% 40%,#31124a,#0b0314 70%);
+}
+
+.moon{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:#fff2f8;
+    box-shadow:0 0 45px #ffe1ef,0 0 110px rgba(255,170,215,.35);
+    margin:0 auto 35px;
+    position:relative;
+}
+
+.moon:after{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:#31124a;
+    left:48px;
+    top:-14px;
+}
+
+.song-title{
+    font-size:clamp(28px,5vw,52px);
+    color:#ffd0e5;
+    margin:20px 0;
+}
+
+.song-box{
+    margin-top:30px;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,.06);
+}
+
+.song-box a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    border:1px solid #ff9fc9;
+    transition:.3s;
+}
+
+.song-box a:hover{
+    background:#ff4f9a;
+    transform:translateY(-3px);
+}
+.first_photo{
+      width:100%;
+    max-width:300px;
+    border-radius:22px;
+    margin:30px auto;
+    display:block;
+    border:2px solid rgba(255,190,220,.3);
+    box-shadow:0 0 30px rgba(255,150,200,.4);
+    object-fit:contain;
+    transition:.4s;
+}
+.first_photo:hover{
+    transform:scale(1.03);
+}
+.memory-photo{
+    width:100%;
+    max-width:550px;
+    border-radius:22px;
+    margin:30px auto;
+    display:block;
+    border:2px solid rgba(255,190,220,.3);
+    box-shadow:0 0 30px rgba(255,150,200,.4);
+    transition:.4s;
+}
+
+.memory-photo:hover{
+    transform:scale(1.03);
+}
+img{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:18px;
+    margin-top:30px;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 22px;
+    margin: 30px auto;
+    display: block;
+    border-radius:18px;
+    border:2px solid rgba(255,190,220,.3);
+    box-shadow:0 0 20px rgba(255,150,200,.3);
+    transition:.4s;
+}
+img:hover{
+    transform:scale(1.04);
+}
+.photo-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:18px;
+    margin-top:30px;
+    
+    
+}
+
+.photo-gallery img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:18px;
+    border:2px solid rgba(255,190,220,.3);
+    box-shadow:0 0 20px rgba(255,150,200,.3);
+    transition:.4s;
+
+}
+
+.photo-gallery img:hover{
+    transform:scale(1.04);
+}
+
+.final{
+    min-height:120vh;
+    background:radial-gradient(circle at 50% 45%,#6e1649 0,#230822 30%,#07020c 75%);
+    perspective:1000px;
+}
+
+.final .content{
+    transform-style:preserve-3d;
+}
+
+.threeD{
+    font-family:Impact,Haettenschweiler,"Arial Black",sans-serif;
+    font-size:clamp(55px,13vw,150px);
+    line-height:.85;
+    letter-spacing:5px;
+    color:#ffb0d3;
+    text-transform:uppercase;
+    transform:rotateX(12deg) rotateY(-8deg);
+    text-shadow:
+        1px 1px 0 #d95d91,
+        2px 2px 0 #c54c80,
+        3px 3px 0 #ae3d6e,
+        4px 4px 0 #96335f,
+        8px 8px 20px rgba(0,0,0,.7),
+        0 0 35px rgba(255,90,165,.6);
+    animation:float3d 4s ease-in-out infinite;
+}
+
+@keyframes float3d{
+    0%,100%{
+        transform:rotateX(12deg) rotateY(-8deg) translateY(0);
+    }
+    50%{
+        transform:rotateX(5deg) rotateY(8deg) translateY(-15px);
+    }
+}
+
+.athan{
+    font-size:clamp(30px,6vw,65px);
+    margin-top:25px;
+    color:#fff;
+}
+
+.final-message{
+    max-width:700px;
+    margin:35px auto 0;
+}
+
+.final-message strong{
+    color:#ffafd1;
+}
+
+.floating-heart{
+    position:absolute;
+    bottom:-40px;
+    font-size:22px;
+    opacity:.7;
+    animation:rise 9s linear infinite;
+    z-index:1;
+}
+
+.h1{left:8%;animation-delay:1s}
+.h2{left:25%;animation-delay:4s}
+.h3{left:48%;animation-delay:2s}
+.h4{left:72%;animation-delay:5s}
+.h5{left:90%;animation-delay:3s}
+
+@keyframes rise{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+    10%{
+        opacity:.8;
+    }
+    100%{
+        transform:translateY(-115vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+footer{
+    padding:25px;
+    text-align:center;
+    background:#050108;
+    color:#b98da5;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+
+    .card{
+        padding:32px 20px;
+    }
+
+    .moon,
+    .moon:after{
+        width:125px;
+        height:125px;
+    }
+
+    .moon:after{
+        left:35px;
+    }
+
+    .photo-gallery img{
+        height:250px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+
+<section id="home">
+
+<div class="stars"></div>
+
+<div class="content">
+
+<div class="temple">🛕</div>
+
+<div class="eyebrow">A little story about us</div>
+
+<h1>For <span class="highlight">My Man</span> ❤️</h1>
+
+<p style="margin-top:28px">
+Some love stories begin with a photograph.<br>
+<span class="highlight">Ours began with a moment.</span>
+</p>
+
+<div class="scroll">
+SCROLL TO READ OUR STORY ↓
+</div>
+
+</div>
+</section>
+
+
+<!-- FIRST MEETING -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">01</div>
+
+<div class="eyebrow">July 11 — The beginning</div>
+
+<h2>Our First Meeting 🛕</h2>
+
+<p>
+I met you at a temple, Athan.
+
+July 11 will always be a special date in my heart.
+
+I never knew that one simple meeting would become
+the beginning of such a beautiful story.
+
+We didn't take a photograph that day.
+But maybe that's okay.
+
+Some moments don't need a camera to become unforgettable.
+</p>
+
+<p class="quote">
+"I may not have a picture of that day,
+but I will always have the memory of you.
+That moment when I saw you,
+I felt something special and butterflies everywhere." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FIRST PHONE CALLS -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">02</div>
+
+<div class="eyebrow">After our first meeting</div>
+
+<h2>Our First Phone Calls 📞</h2>
+
+<p>
+After we met, we started talking on the phone.
+
+Those simple calls slowly became something
+I looked forward to.
+
+Hearing your voice made ordinary days
+feel a little more special.
+
+Every day started with our conversations.
+
+But August 3 was different.
+
+That was the day I didn't hear your voice.
+I felt something was missing.
+
+I waited for your call for almost five hours.
+I texted you and called you, but there was no response.
+
+I thought maybe this was your revenge
+for me not picking up your call on Saturday,
+August 1.
+
+If I hurt you, I'm sorry for everything.
+</p>
+
+<p class="quote">
+"Somehow, your voice became one of my favourite sounds." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FIRST VIDEO CALL -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">03</div>
+
+<div class="eyebrow">July 22 — A special moment</div>
+
+<h2>Our First Video Call 📱</h2>
+
+<p>
+July 22 was our first video call!
+
+Until then, I had only heard your voice.
+But that day, I finally got to see your face
+while talking to you.
+
+Slowly, your calls became my happiness,
+your voice became my favourite sound,
+and seeing your face became something
+I always waited for.
+</p>
+
+<p class="quote">
+"From hearing your voice to seeing your smile,
+every little moment made me fall for you
+a little more." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FIRST PHOTO AND RMKV -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">04</div>
+
+<div class="eyebrow">August 31 — Our first picture</div>
+
+<h2>Our First Photo Together 📸</h2>
+
+<p>
+Finally, a picture of us together!
+
+August 31 was such a beautiful day.
+We went to RmKV for our engagement saree shopping.
+
+But honestly, my favourite part wasn't the shopping.
+It was spending that day with you.
+</p>
+<div class="first_photo">
+<img src="first_Photo.jpeg"
+alt="Our first photo together"
+class="memory-photo">
+</div>
+<p>
+We sat together and had lunch together.
+
+That simple lunch became one of my
+most unforgettable memories.
+
+I don't know whether you remember
+every little moment of that day,
+but I will always remember it.
+
+Sitting beside you, sharing food,
+laughing and spending time together
+made me so happy.
+</p>
+
+<p class="quote">
+"My favourite picture isn't just a photograph.
+It's a memory of the day I got to sit beside you
+and enjoy every little moment." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FIRST GIFT -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">05</div>
+
+<div class="eyebrow">The first gift from you</div>
+
+<h2>My First Gift 🎁</h2>
+
+<div style="font-size:90px;margin:10px 0 22px;">
+✨💎✨
+</div>
+
+<p>
+Your first gift to me came through your mom —
+a beautiful <span class="highlight">chimmiki kamal</span>. ❤️
+</p>
+
+<p style="margin-top:22px">
+It wasn't just a pair of earrings.
+<img src="earring.jpeg">
+It became a little reminder of you,
+your thoughtfulness and the love behind that gesture.
+</p>
+
+<p class="quote">
+"My first gift from my love —
+a memory I will always treasure." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- ENGAGEMENT DAY -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">06</div>
+
+<div class="eyebrow">September 13 — Our special day</div>
+
+<h2>Our Engagement Day 💍</h2>
+
+<div style="font-size:85px;margin:20px;">
+💍❤️💍
+</div>
+
+<p>
+September 13 — the day we officially became engaged!
+
+It was such a hectic day, wasn't it, Athan?
+
+So many things happening, so many people,
+so much running around and so many emotions.
+
+But somewhere between all that chaos,
+we created some of our most beautiful memories.
+
+Our beautiful photographs, our smiles,
+the excitement and the feeling of becoming
+a part of each other's lives made that day unforgettable.
+</p>
+
+<div class="photo-gallery">
+
+<img src="engagement1.jpeg" alt="Engagement memory one">
+
+<img src="engagement2.jpeg" alt="Engagement memory two">
+
+
+
+</div>
+
+<p class="quote">
+"Among all the beautiful moments of that day,
+my favourite one was knowing that I was
+going to spend my life with you." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FIRST KISS -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">07</div>
+
+<div class="eyebrow">A moment I will never forget</div>
+
+<h2>Our First Kiss 💋</h2>
+
+<div style="font-size:75px;margin:20px;">
+❤️😘
+</div>
+
+<p>
+And here comes one of my most unforgettable memories!
+
+It happened on our engagement day.
+
+We were sitting together,
+and suddenly you kissed me!
+
+And the funniest and most unforgettable part?
+
+It happened right in front of my dad! 🙈
+</p>
+
+<p>
+I was so surprised, happy, shy and scared
+at the same time.
+
+I don't know whether you remember that moment
+the way I do, but I will always remember it.
+
+It was unexpected, a little scary,
+but one of the most beautiful memories of my life.
+</p>
+
+<p class="quote">
+"A little unexpected, a little scary,
+but completely beautiful.
+My first kiss with you will always be special." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- LITTLE FIGHTS -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">08</div>
+
+<div class="eyebrow">Not always perfect, but always special</div>
+
+<h2>Our Little Fights ❤️</h2>
+
+<p>
+Our story isn't always filled with romantic moments.
+
+We have our little fights, misunderstandings,
+silly arguments, teasing and sometimes
+those moments when neither of us wants
+to talk first.
+
+But between all those little fights,
+there is also so much love, care,
+affection and understanding.
+
+I know we are not perfect.
+
+We both make mistakes, and sometimes
+we hurt each other without intending to.
+</p>
+
+<p class="quote">
+"I don't want a perfect love story.
+I just want a story where we never stop
+choosing each other." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- WEDDING SAREE SHOPPING -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">09</div>
+
+<div class="eyebrow">October 25 — Another beautiful memory</div>
+
+<h2>Our Wedding Saree Shopping 💗</h2>
+
+<p>
+October 25 was our wedding saree shopping day!
+
+Athan, I know how hectic and crowded the shop was.
+
+You were getting so angry and tense
+because there were so many people around us.
+
+But do you know what I remember the most?
+</p>
+
+<p>
+The way you touched me,
+the way you placed your hands on my shoulder,
+and the way you held my hand and took me
+towards the silver section.
+
+Those little gestures made me feel
+so loved and special.
+
+I loved the way you held my hand.
+
+I loved the way you pulled me along with you.
+
+Maybe those things seemed ordinary to you,
+but they meant so much to me.
+</p>
+
+<h2 style="font-size:35px;margin-top:35px;">
+My Special Silver Ring 💍
+</h2>
+
+<img src="silver_ring.jpeg"
+alt="The silver ring you bought me"
+class="memory-photo">
+
+<p>
+And then you bought me a silver ring!
+
+It wasn't just a ring.
+
+It became another little memory of us.
+
+Whenever I look at it, I will remember
+that crowded shop, your hand holding mine,
+and that beautiful little moment.
+</p>
+
+<p class="quote">
+"It's not about how expensive a gift is.
+It's about the person who gives it
+and the beautiful memory attached to it." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- SONG -->
+
+<section class="song">
+
+<div class="stars"></div>
+
+<div class="content">
+
+<div class="moon"></div>
+
+<div class="eyebrow">The song you dedicated</div>
+
+<div class="song-title">
+"Enge Andha Vennila" 🌙
+</div>
+
+<p>
+You dedicated this song to me, Papu.
+
+And now, whenever I hear it,
+it carries a little piece of you with it.
+
+Some songs become special
+because of the person who dedicates them.
+</p>
+
+<div class="song-box">
+
+<div class="small">
+Our special song ❤️
+</div>
+
+<a href="https://www.youtube.com/results?search_query=Enge+Andha+Vennila"
+target="_blank"
+rel="noopener noreferrer">
+
+🎵 Listen to Our Song
+
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- THE WAY YOU CARE -->
+
+<section>
+
+<div class="stars"></div>
+
+<div class="content card">
+
+<div class="number">10</div>
+
+<div class="eyebrow">What I love about you</div>
+
+<h2>The Way You Care ❤️</h2>
+
+<p>
+I love the way you admire me.
+
+I love the way you notice the little things about me.
+
+And most of all,
+I love the way you take care of me.
+</p>
+
+<p style="margin-top:22px">
+You make me feel seen, valued and cared for.
+
+Those little things mean more to me
+than I can ever explain.
+</p>
+
+<p class="quote">
+"Sometimes the smallest gestures
+make the biggest difference in love." ❤️
+</p>
+
+</div>
+</section>
+
+
+<!-- FINAL MESSAGE -->
+
+<section class="final">
+
+<div class="stars"></div>
+
+<span class="floating-heart h1">❤️</span>
+<span class="floating-heart h2">💗</span>
+<span class="floating-heart h3">❤️</span>
+<span class="floating-heart h4">💕</span>
+<span class="floating-heart h5">❤️</span>
+
+<div class="content">
+
+<div class="eyebrow">
+And there is one thing I want you to know...
+</div>
+
+<div class="heart"></div>
+
+<div class="threeD">
+I LOVE YOU
+</div>
+
+<div class="athan">
+ATHAN ❤️
+</div>
+
+<div class="final-message">
+
+<p>
+From our first meeting on July 11,
+to our first video call on July 22,
+our first photograph on August 31,
+our engagement on September 13,
+our unexpected first kiss,
+our little fights and endless love,
+and our wedding shopping on October 25...
+
+Every little moment has become
+a beautiful chapter of our story.
+</p>
+
+<p style="margin-top:30px">
+<strong>
+Athan, you are more important to me
+than you probably realise.
+</strong>
+</p>
+
+<p style="margin-top:25px">
+I know you have work, responsibilities
+and so many things to take care of.
+
+I understand that you cannot always be available.
+
+I never expect you to spend every minute with me.
+
+I don't want to disturb your work
+or your busy days.
+</p>
+
+<p style="margin-top:25px">
+But sometimes, just remember that there is
+one girl waiting for your call,
+your message and even a small text from you.
+</p>
+
+<p style="margin-top:25px">
+A simple message like
+
+<span class="highlight">"Had lunch?"</span>,
+
+<span class="highlight">"Reached home"</span>,
+
+<span class="highlight">"I'm busy right now"</span>,
+
+or even
+
+<span class="highlight">
+"Something came up, I'll let you know later"
+</span>
+
+is enough to make me feel included in your day.
+</p>
+
+<p style="margin-top:25px">
+Do you remember how you were in the beginning?
+
+How you used to call, message and tell me
+even the smallest things?
+
+I miss that sometimes.
+
+I know relationships change with time,
+but I don't want us to lose those little things
+that made me feel so loved in the beginning.
+</p>
+
+<p style="margin-top:25px">
+Sometimes your changes hurt me.
+
+Not because I want all your attention,
+but because I miss the way you used to make
+me feel like I was a part of everything.
+</p>
+
+<p style="margin-top:25px">
+I don't want to be just another person
+in your busy day.
+
+I want to be someone special,
+someone you remember even when life gets busy,
+someone you want to share your little moments with.
+</p>
+
+<p style="margin-top:30px">
+<strong>
+I don't need expensive gifts,
+big surprises or hours of conversation.
+
+Sometimes, all I need is a little time,
+a little attention and the same love
+you showed me in the beginning.
+</strong>
+</p>
+
+<p style="margin-top:30px">
+We have so many beautiful memories behind us
+and so many beautiful moments waiting ahead.
+
+I want more photographs,
+more lunches together,
+more shopping days,
+more silly fights,
+more kisses and more reasons to smile.
+</p>
+
+<p style="margin-top:30px;font-size:28px;color:#ffb5d4">
+I love you, Athan. ❤️
+</p>
+
+<p style="margin-top:20px">
+Please don't forget the girl
+who is always waiting to hear from you.
+</p>
+
+<p style="margin-top:30px;font-size:30px;color:#ffb5d4">
+Forever yours, your Papu. 🌙
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+
+Made with love, especially for my kuttypattu ❤️
+
+</footer>
+
+</body>
+</html>
